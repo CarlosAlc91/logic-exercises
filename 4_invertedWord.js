@@ -12,7 +12,7 @@
 
 */
 
-const text = 'carlos'
+const text = 'programming'
 
 function invertedWord(text) {
 
@@ -34,4 +34,4 @@ function invertedWord(text) {
   return `${text} inverted is: '${inverted}'`
 }
 
-console.log(invertedWord(text))
+console.log(invertedWord(text)) //programming inverted is: 'gnimmargorp'
