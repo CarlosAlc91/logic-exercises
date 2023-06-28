@@ -2,17 +2,21 @@
 
   *EXERCISE 3
 
-  *Given a word, search it inside a string and return it.
+  *Given two parameters, str and word, create a function where the parameter 'word' is search inside a string.
+  *You must return how many times that word is found inside the string.
+  * If word is an empty string it has to return 'Enter a word'
+  * If the word is not found it has to return 'word not found'
 
-  *string => 'hi im a word inside a frase with another word'
-  * parameter => word
-  * return word 2 times
-  * return carlos 0
+  *str => 'I love programming, although, programming is kinddaaaa TOUGH, still, I love programming'
+  * word => 'programming'
+  * return word[programming] => 2 times
+  * return word[carlos] => 'carlos not found'
+  * return word[''] => 'Enter a word'
 
 */
 
 const str = 'I love programming, although, programming is kinddaaaa TOUGH, still, I love programming'
-const word = ' programming '
+const word = 'programming'
 
 //function creation
 function countingWords(str, word) {
@@ -25,6 +29,10 @@ function countingWords(str, word) {
 
   //empty object creation
   let obj = {}
+
+  if (word === '') {
+    return `Enter a word`
+  }
 
   //for loop
   for (let i = 0; i < arrStr.length; i++) {
@@ -49,7 +57,7 @@ function countingWords(str, word) {
       //if no word found it will return 0  
     } else {
 
-      return 0
+      return `${word} is not found`
     }
 
   }
