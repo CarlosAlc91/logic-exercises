@@ -27,9 +27,11 @@ function invertedWord(text) {
 
   //for (i starts at the last character of the word; i has to be greater o equals to 0; i decrements)
   for (let i = text.length - 1; i >= 0; i--) {
+
+    //iterates and adds to variable
     inverted += text[i]
   }
-  return inverted
+  return `${text} inverted is: '${inverted}'`
 }
 
 console.log(invertedWord(text))
