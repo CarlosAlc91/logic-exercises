@@ -21,4 +21,4 @@ function percentageOf(percentage, number) {
   return result
 }
 
-console.log(percentageOf(percentage, number))
+console.log(percentageOf(percentage, number)) //20% of 100 is 20
